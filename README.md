@@ -44,16 +44,16 @@ mvn clean test
 Below are the execution details from the Allure Report, showing a 100% pass rate for the 20 automated test cases:
 
 ### 1. Dashboard Overview
-![Dashboard](HerokuApp-Automation-Framework/screenshots/allure_1.png)
+![Dashboard](screenshots/allure_1.png)
 
 ### 2. Test Suites & Categories
-![Suites](HerokuApp-Automation-Framework/screenshots/allure_2.png)
+![Suites](screenshots/allure_2.png)
 
 ### 3. Graphs & Timeline
-![Graphs](HerokuApp-Automation-Framework/screenshots/allure_3.png)
+![Graphs](screenshots/allure_3.png)
 
 ### 4. Detailed Test Case Steps
-![Details](HerokuApp-Automation-Framework/screenshots/allure_4.png)
+![Details](screenshots/allure_4.png)
 
 ### 5. Execution Retries & Trends
-![Trends](HerokuApp-Automation-Framework/screenshots/allure_5.png)
+![Trends](screenshots/allure_5.png)
