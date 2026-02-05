@@ -24,14 +24,26 @@ The project is structured to ensure clean separation of concerns:
 - **Wait Strategy:** Implemented Explicit Waits to handle dynamic elements and ensure stability.
 - **Suite Management:** Optimized `testng.xml` for executing multiple test categories.
 
-## 🧪 Scenarios Covered (20 Tests)
-I have automated 20 different test scenarios covering various web elements:
-- Login Functionality (Positive/Negative).
-- File Upload / Download.
-- JavaScript Alerts & Modals.
-- Dynamic Loading elements.
-- Data Tables & Sorting.
-- Checkboxes, Dropdowns, and Hovers.
+## 🧪 Scenarios Covered (20 Tests across 18 Page Objects)
+I have engineered a robust automation suite covering **18 distinct page modules** from "The Internet" app, using the **Page Object Model (POM)** for maximum maintainability:
+
+### 🛠️ Core Functional Pages:
+* **LoginPage & SecureArea:** Automated secure login/logout flows and session validation.
+* **AddRemoveElements:** Validation of dynamic element creation and deletion.
+* **Checkboxes & DropdownPage:** Precise automation for standard UI form controls.
+* **KeyPressPage:** Simulating real keyboard interactions and input shortcuts.
+
+### 🧩 Advanced UI & Dynamic Elements:
+* **DynamicLoading (PageOne & PageTwo):** Handling elements that appear via AJAX or after a delay using **Explicit Waits**.
+* **HoversPage:** Testing mouse-over actions on hidden UI components.
+* **JavaScriptAlertsPage:** Automating JS Alert, Confirm, and Prompt pop-ups.
+* **InfiniteScroll & LargeAndDeepDOM:** Handling complex page structures and scrolling behaviors.
+
+### 🔍 Window & Frame Management:
+* **FramePage & NestedFrames:** Switching between complex iFrame structures.
+* **MultipleWindows & NewWindowTabPage:** Controlling and validating multi-tab browser sessions.
+* **FileUpload & FileDownloadPage:** End-to-end automation for file handling scenarios.
+* **SortableDataTables:** Extracting and validating dynamic data from sortable tables.
 
 ## 🚀 How to Run the Project
 1. Clone the repository.
