@@ -13,6 +13,7 @@ public class NestedFramesPage {
     public NestedFramesPage(WebDriver driver) {
         this.driver = driver;
     }
+
     public String getTextOfLeftFrame(){
         driver.switchTo().frame(locatorOfTopFrame);
         driver.switchTo().frame(locatorOfLeftFrame);

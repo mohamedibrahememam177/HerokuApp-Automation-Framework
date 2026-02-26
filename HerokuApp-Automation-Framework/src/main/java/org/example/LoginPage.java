@@ -3,6 +3,7 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class LoginPage {
     private WebDriver driver;
     private By userNameLocator= By.id("username");
@@ -12,15 +13,18 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
-    //methods
-    public void setUserNameLocator(String userName) {
+
+    public void setUserNameLocator(String userName ) {
       driver.findElement(userNameLocator).sendKeys(userName);
     }
     public void setPassWordLocator(String password){
         driver.findElement(passWordLocator).sendKeys(password);
     }
-    public SecureArea clickLoginButton(){
+
+    public SecureAreaPage clickLoginButton(){
         driver.findElement(loginButton).click();
-        return new SecureArea(driver);
+        return new SecureAreaPage(driver);
     }
+
+
 }

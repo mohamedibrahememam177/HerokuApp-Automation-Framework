@@ -16,7 +16,6 @@ public class DropdownPage {
     private By SelectOptionLocator= By.id("dropdown");
 
 
-
     public DropdownPage(WebDriver driver) {
         this.driver = driver;
     }

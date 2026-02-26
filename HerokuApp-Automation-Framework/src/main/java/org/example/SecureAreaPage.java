@@ -8,12 +8,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class SecureArea {
+public class SecureAreaPage {
     private WebDriver driver;
     private By secureAreaMessage = By.id("flash");
 
     // Constructor
-    public SecureArea(WebDriver driver) {
+    public SecureAreaPage(WebDriver driver) {
         this.driver = driver;
     }
 

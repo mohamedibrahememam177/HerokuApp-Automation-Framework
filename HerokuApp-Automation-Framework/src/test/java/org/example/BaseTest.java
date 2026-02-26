@@ -10,7 +10,7 @@ import utils.WindowManager;
 
 public class BaseTest {
     protected WebDriver driver;
-   protected HomePage homePage;
+    protected HomePage homePage;
 
     @BeforeClass
     public void setUp() {

@@ -3,22 +3,23 @@ package org.example;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class DynamicLoadingTest extends BaseTest{
     @Test
-    public void testDynamicLoading(){
+    public void testDynamicLoadingPageOne(){
        DynamicLoadingPageOne dynamicLoadingPageOne= homePage.clickOnDynamicLoading().clickOnEx1();
        dynamicLoadingPageOne.clickOnStart();
-       dynamicLoadingPageOne.waitForHelloWorldText();
-       dynamicLoadingPageOne.getHelloWorldText();
-        assertEquals(dynamicLoadingPageOne.getHelloWorldText(),"Hello World!","incorrect message");
+       String text=dynamicLoadingPageOne.getHelloWorldMessageText();
+       assertEquals(text,"Hello World!","Incorrect message");
+       assertTrue(dynamicLoadingPageOne.isBarInVisible(),"The Bar is still visible");
     }
 
     @Test
     public void testDynamicLoadingPageTwo(){
         DynamicLoadingPageTwo dynamicLoadingPageTwo=homePage.clickOnDynamicLoading().clickOnEx2();
         dynamicLoadingPageTwo.clickOnStart();
-        dynamicLoadingPageTwo.waitForHelloWorldText();
-        assertEquals(dynamicLoadingPageTwo.getHelloWorldText(),"Hello World!","incorrect message");
+        String text= dynamicLoadingPageTwo.getHelloWorldMessageText();
+        assertEquals(text,"Hello World!","Incorrect message");
     }
 }

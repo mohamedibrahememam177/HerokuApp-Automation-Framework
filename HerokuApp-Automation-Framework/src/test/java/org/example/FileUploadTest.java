@@ -9,5 +9,5 @@ public class FileUploadTest extends BaseTest{
         FileUploadPage fileUploadPage = homePage.FileUploadPage();
         fileUploadPage.pressChooseFile("D:\\IdeaProjects\\MyAutomationSpace\\resources\\Myphoto.jpg");
         fileUploadPage.pressOnUploadLocator();
-        assertEquals(fileUploadPage.getText(), "Myphoto.jpg", "text is incorrect");
+        assertEquals(fileUploadPage.getText(), "Myphoto.jpg", "The file name is incorrect");
     }}

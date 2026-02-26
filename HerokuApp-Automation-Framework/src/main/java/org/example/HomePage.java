@@ -10,12 +10,12 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
     private WebDriver driver;
 
-    //constructor
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    // methods=interaction
+
     public void click(String textLink){
         driver.findElement(By.linkText(textLink)).click();
     }
@@ -75,6 +75,10 @@ public class HomePage {
     public SortableDataTablesPage clickOnSortableDataTables(){
         click("Sortable Data Tables");
         return new SortableDataTablesPage(driver);
+    }
+    public EntryAdPage clickOnEntryPage(){
+        click("Entry Ad");
+        return new EntryAdPage(driver);
     }
 
 

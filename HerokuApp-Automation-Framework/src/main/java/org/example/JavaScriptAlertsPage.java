@@ -6,15 +6,14 @@ import org.openqa.selenium.WebDriver;
 public class JavaScriptAlertsPage {
     private WebDriver driver ;
     private By locatorOfAlertButton= (By.xpath("//button[contains(text(),'Alert')]")) ;
-
     private By locatorOfConfirmButton= By.xpath("//button[contains(.,'Confirm')]");
     private By locatorOfPromptButton= By.xpath("//button[contains(.,'Prompt')]");
     private By locatorOfResultText= By.id("result");
 
-
     public JavaScriptAlertsPage(WebDriver driver) {
         this.driver = driver;
     }
+
     public void clickOnAlert(){
         driver.findElement(locatorOfAlertButton).click();
     }

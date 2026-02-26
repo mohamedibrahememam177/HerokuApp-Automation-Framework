@@ -8,6 +8,7 @@ public class WindowManager {
     public WindowManager(WebDriver driver) {
         this.driver = driver;
     }
+
     public void refreshPage(){
         driver.navigate().refresh();
     }
